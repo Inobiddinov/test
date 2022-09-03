@@ -1,0 +1,62 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just little project</title>
+    <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+    <section>
+    <div class="circle"></div>
+    <header><a href="#" > <img src="./drive-download-20220903T142632Z-001/logo.png "; class="logo"></a>
+
+    <ul>
+
+    <li> <a href="#">Home</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">What's New</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+
+    </header>
+
+    <div class="content">
+    <div class="textBox">
+
+    <h2>Its not just a Coffee <br> It's <span>Starbucks</span> </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur vitae quis eveniet. Ullam minus fuga, quam adipisci nostrum, neque fugit, sequi qui laboriosam libero error repellat nesciunt optio quia!</p>
+   
+    <a href="#">Learn More</a>
+    </div>
+    <div class="imgBox">
+        <img src="./drive-download-20220903T142632Z-001/img1.png" alt="#" class="Starbucks">
+     </div>
+    
+     </div>
+     
+
+     <ul class="thumb">
+        <li><img src="./drive-download-20220903T142632Z-001/thumb1.png"  onclick="imgSlider('./drive-download-20220903T142632Z-001/img1.png'); changeCircleColor('#017143')"></li>
+        <li><img src="./drive-download-20220903T142632Z-001/thumb2.png"  onclick="imgSlider('./drive-download-20220903T142632Z-001/img2.png'); changeCircleColor('#eb7495')"></li>
+        <li><img src="./drive-download-20220903T142632Z-001/thumb3.png"  onclick="imgSlider('./drive-download-20220903T142632Z-001/img3.png'); changeCircleColor('#d752b1')"></li>
+     </ul>
+     <ul class="sci">
+        <li><a href="#"><img src="./drive-download-20220903T142632Z-001/facebook.png" alt="#"></a></li>
+        <li><a href="#"><img src="./drive-download-20220903T142632Z-001/twitter.png" alt="#"></a></li>
+        <li><a href="#"><img src="./drive-download-20220903T142632Z-001/instagram.png" alt="#"></a></li>
+     </ul>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+    document.querySelector('.Starbucks').src = anything;
+}
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    </body>
+    </html>
